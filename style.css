@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0); /* Light gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./Sky.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px auto;
+    overflow: hidden; /* Clip image to circle */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-info h1 {
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clouds {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cloud {
+    background-color: #e0f2fe; /* Light blue cloud color */
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cloud:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .clouds {
+        flex-direction: column;
+        align-items: center;
+    }
+}
